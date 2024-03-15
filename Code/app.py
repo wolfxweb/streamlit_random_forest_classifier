@@ -66,11 +66,7 @@ def main():
     st.pyplot(fig)
      
    
-    # Exibir o código do aplicativo Streamlit
-    st.subheader("Código do aplicativo")
-    with open("app.py", "r") as file:
-        code = file.read()
-    st.code(code)
+
     
 if __name__ == "__main__":
     main()
