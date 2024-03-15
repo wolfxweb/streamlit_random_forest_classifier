@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier
 import matplotlib.pyplot as plt
+#source venv/bin/activate
 
 def setItensSideBar():
     sepal_length = st.sidebar.slider("Sepal length", 4.3, 7.9, 5.0)
