@@ -12,6 +12,7 @@ def setItensSideBar():
     petal_length = st.sidebar.slider("Petal length", 1.0, 6.9, 2.5)
     petal_width = st.sidebar.slider("Petal width", 0.1, 2.5, 0.5)
 
+    #Criando um data frame para mostrar na tela os valores selecionado pelo usuário nos slider
     itens = {
             'Sepal length': sepal_length,
             'Sepal width': sepal_width,
@@ -66,10 +67,10 @@ def main():
      
    
     # Exibir o código do aplicativo Streamlit
-    st.subheader("Código do aplicativo")
-    with open("app.py", "r") as file:
-        code = file.read()
-    st.code(code)
+ ##   st.subheader("Código do aplicativo")
+ ##   with open("app.py", "r") as file:
+  ##      code = file.read()
+ ##   st.code(code)
     
 if __name__ == "__main__":
     main()
